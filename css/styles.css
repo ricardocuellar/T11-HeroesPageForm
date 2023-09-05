@@ -38,11 +38,11 @@ nav.menu-nav ul{
     list-style: none;
     display: flex;
     justify-content: end;
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 
 nav.menu-nav ul li{
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 
 nav.menu-nav ul li:last-child{
@@ -51,9 +51,12 @@ nav.menu-nav ul li:last-child{
 
 nav.menu-nav ul li a{
     color: #fff;
-
 }
 
+main.cards{
+    margin: 0 5%;
+    margin-bottom: 20px;
+}
 
 section.card{
     background-color: #F3F3F3;
@@ -169,8 +172,12 @@ img.profile_desktop{
 
     section.card{
         width: 45%;
-        margin: 10px;
+        margin: 0;
+        margin-top: 40px;
+        margin-right: 20px;
     }
+
+    
 
     button.float-button{
         width: 8%;
@@ -203,10 +210,18 @@ img.profile_desktop{
 
     section.card{
         width: 30%;
-        margin: 10px;
+        margin-right: 45px;
+    }
+
+    section.card:nth-child(3n)
+    {
+        margin-right: 0;
     }
 
     button.float-button{
-        width: 6%;
+        padding: 15px;
+        font-size: 40px;
+        width: 5rem;
     }
+
 }
