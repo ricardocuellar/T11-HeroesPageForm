@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+div.topbar{
+    background-color: #1CD1B0;
+    padding: 4px 30px;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+div.title{
+    background-color: #00669F;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 14px;
+    position: relative;
+    top: 29px;
+    bottom: 29px;
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+}
+
+nav.menu-nav{
+    background-color: #001D2D;
+    box-shadow: 0px 4px 8px grey;
+}
+
+nav.menu-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding: 10px 0px;
+}
+
+nav.menu-nav ul li{
+    padding: 0px 5px;
+}
+
+nav.menu-nav ul li:last-child{
+    padding-right: 20px;
+}
+
+nav.menu-nav ul li a{
+    color: #fff;
+
+}
+
+
+section.card{
+    background-color: #F3F3F3;
+    margin: 20px 30px;
+    border-radius: 1px;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
+    position: relative;
+    border-radius: 2rem 2rem 0 0;
+}
+
+section.card div.fondo img{
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+
+}
+
+section.card div.info{
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+
+
+section.card div.info img{
+    border-radius: 100%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+section.card div.info h3{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+section.card div.info p{
+    padding: 20px;
+    text-align: left;
+}
+
+section.card div.info p.texto-batman{
+    font-weight: bold;
+}
+
+section.card div.info button{
+    background-color: #00669F;
+    color: #fff;
+    padding: 18px 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+section.card i.fa-heart{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #CC2424;
+}
+
+footer{
+    background-color: #00669F;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer a i.fa-github{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+footer a img.github{
+    width: 100px;
+    margin-top: 10px;
+}
+
+button.float-button{
+    padding: 15px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #00669F;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    width: 15%;
+}
+
+section.harley_queen{
+    display: none;
+}
+
+img.profile_desktop{
+    display: none;
+}
+
+
+/*Tablet*/
+@media(min-width: 768px){
+    main.cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.card{
+        width: 45%;
+        margin: 10px;
+    }
+
+    button.float-button{
+        width: 8%;
+    }
+
+    section.harley_queen{
+        display: inline-block;
+    }
+
+    img.profile_desktop{
+        display: block;
+    }
+
+    img.profile_mobile{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 1024px){
+    main.cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.card{
+        width: 30%;
+        margin: 10px;
+    }
+
+    button.float-button{
+        width: 6%;
+    }
+}
