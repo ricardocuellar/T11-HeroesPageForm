@@ -162,6 +162,34 @@ img.profile_desktop{
     display: none;
 }
 
+/**FORM**/
+section.form-container{
+    background-color: #00669F;
+    margin: 30px 15%;
+    border-radius: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+div.group-form{
+    display: flex;
+    justify-content: center;
+}
+
+div.element-form{
+    display: flex;
+    flex-direction: column;
+}
+
+div.element-form input.nombre{
+    padding: 10px;
+}
+
+div.element-form-child{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
 /*Tablet*/
 @media(min-width: 768px){
