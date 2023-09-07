@@ -171,6 +171,11 @@ section.form-container{
     color: #ffffff;
 }
 
+p.personaje{
+    font-size: 12px;
+    margin: 8px;
+}
+
 div.group-form{
     display: flex;
     justify-content: center;
@@ -179,16 +184,74 @@ div.group-form{
 div.element-form{
     display: flex;
     flex-direction: column;
+    margin: 10px;
+}
+
+div.element-form label.name{
+    text-align: left;
+}
+
+div.element-form label.fecha{
+    text-align: left;
+}
+
+div.element-form label.especie{
+    text-align: left;
+}
+
+div.element-form label.foto{
+    text-align: left;
 }
 
 div.element-form input.nombre{
     padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+div.group-form textarea.descripcion{
+    border-radius: 10px;
+}
+
+div.element-form input.archivo{
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+div.element-form input.date{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+div.element-form select.specie{
+    margin: 10px 0px;
+    width: 162.5px;
+    height: 38px;
+    border-radius: 10px;
 }
 
 div.element-form-child{
     display: flex;
     flex-direction: column;
     align-items: start;
+    line-height: 20px;
+}
+
+div.element-form-child{
+    font-size: 10px;
+    
+}
+
+section.form-container input.btn-add{
+    background-color: #1CD1B0;
+    color: black;
+    margin: 17px;
+    font-size: 28px;
+    border-radius: 10px;
+    padding: 20px 70px;
+    font-weight: bold;
 }
 
 /*Tablet*/
