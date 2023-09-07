@@ -6,6 +6,10 @@
 
 }
 
+br{
+    height: 10px;
+}
+
 
 div.topbar{
     background-color: #1CD1B0;
@@ -165,14 +169,40 @@ img.profile_desktop{
 /**FORM**/
 section.form-container{
     background-color: #00669F;
-    margin: 30px 15%;
+    margin: 30px 1%;
     border-radius: 30px;
     text-align: center;
     color: #ffffff;
 }
 
+section.form-container h2.form-title{
+    font-size: 40px;
+    padding-top: 15px;
+
+}
+
+label.input-title{
+    font-size: 20px;
+    padding-bottom: 2px;
+}
+
+div.element-form-child label{
+    font-size: 16px;
+}
+
+div.element-form-child label.input-title{
+    font-size: 20px;
+    padding-bottom: 2px;
+}
+
+div.element-form-child div.tamanio{
+    padding: 2px 0px;
+}
+
+
+
 p.personaje{
-    font-size: 12px;
+    font-size: 20px;
     margin: 8px;
 }
 
@@ -185,6 +215,7 @@ div.element-form{
     display: flex;
     flex-direction: column;
     margin: 10px;
+    width: 45%;
 }
 
 div.element-form label.name{
@@ -232,11 +263,41 @@ div.element-form select.specie{
     border-radius: 10px;
 }
 
+section.form-container input[type='text'], 
+section.form-container input[type='date'],
+section.form-container select.specie {
+    height: 50px;
+    width: 100%;
+    border: 1.534px solid rgba(0, 0, 0, 0.10);
+    color: rgba(0, 0, 0, 0.50);
+
+}
+
+section.form-container input.archivo::file-selector-button{
+    border-radius: 5px;
+    background: #CECECE;
+    border: none;
+    padding: 8px;
+    width: 55%;
+    color: #000;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    
+}
+
+
 div.element-form-child{
     display: flex;
     flex-direction: column;
     align-items: start;
     line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div.element-form-child:first-child{
+    margin-top: 0px;
+
 }
 
 div.element-form-child{
@@ -252,6 +313,9 @@ section.form-container input.btn-add{
     border-radius: 10px;
     padding: 20px 70px;
     font-weight: bold;
+    border: none;
+    width: 80%;
+
 }
 
 /*Tablet*/
@@ -291,12 +355,21 @@ section.form-container input.btn-add{
         align-items: center;
         justify-content: space-around;
     }
+
+    section.form-container input.btn-add{
+        width: 50%;
+    }
 }
 
 @media(min-width: 1024px){
     main.cards{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    section.form-container{
+        background-color: #00669F;
+        margin: 30px 15%;
     }
 
     section.card{
@@ -314,5 +387,11 @@ section.form-container input.btn-add{
         font-size: 40px;
         width: 5rem;
     }
+
+    div.element-form{
+        width: 35%;
+    }
+
+    
 
 }

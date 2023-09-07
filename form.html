@@ -32,17 +32,17 @@
     </header>
 
     <section class="container form-container">
-        <h2>Añadí tu super!</h2>
+        <h2 class="form-title">Añadí tu super!</h2>
         <p class="personaje">Agregá tu personaje favorito completando las opciones.</p>
         <form action="">
             <div class="group-form">
                 <div class="element-form">
-                    <label for="nombre" class="name">*Nombre</label>
+                    <label for="nombre" class="name input-title">*Nombre</label>
                     <input type="text" name="nombre" id="nombre" class="nombre">
                 </div>
 
                 <div class="element-form">
-                    <label for="especie" class="especie">*Especie</label>
+                    <label for="especie" class="especie input-title">*Especie</label>
                     <select name="especie" id="especie" class="specie">
                         <option value="volador">Especie</option>
                         <option value="microbiano">Microbiano</option>
@@ -53,53 +53,52 @@
 
             <div class="group-form">
                 <div class="element-form">
-                    <label for="fecha" class="fecha">Fecha</label>
+                    <label for="fecha" class="fecha input-title">Fecha</label>
                     <input type="date" name="fecha" class="date">
                 </div>
 
                 <div class="element-form">
-                    <label for="foto" class="foto">Agregar foto</label>
+                    <label for="foto" class="foto input-title">Agregar foto</label>
                     <input type="file" name="archivo" class="archivo">
                 </div>
             </div>
 
             <div class="group-form">
                 <div class="element-form">
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción" class="descripcion"></textarea>
+                    <textarea name="descripcion" id="descripcion" cols="40" rows="14" placeholder="Descripción" class="descripcion"></textarea>
                 </div>
 
                 <div class="element-form">
                     <div class="element-form-child">
-                        <label for="poderes">Poderes</label>
-                        <div class="tamaño">
+                        <label for="poderes" class="input-title">Poderes</label>
+                        <div class="tamanio">
                             <input type="checkbox" name="poderes" id="poderes1" value="volar">
                             <label for="poderes">Volar</label>
                         </div>
-                        <div class="tamaño">
+                        <div class="tamanio">
                             <input type="checkbox" name="poderes" id="poderes2" value="superinteligencia">
                             <label for="poderes">SuperInteligencia</label>
                         </div>
-                        <div class="tamaño">
+                        <div class="tamanio">
                             <input type="checkbox" name="poderes" id="poderes3" value="vista-rayo-laser">
                             <label for="poderes">Vista de rayo láser</label>
                         </div>
-                        <div class="tamaño">
+                        <div class="tamanio">
                             <input type="checkbox" name="poderes" id="poderes4" value="billetera-gorda">
                             <label for="poderes">Billetera gorda</label>    
                         </div>
                         
                                         
                     </div>
-                    <br>
                     <hr>
-                    <br>
+                
 
                     <div class="element-form-child">
-                        <label for="tipo">Tipo Personaje</label>
-                        <div>
+                        <label for="tipo" class=" input-title">Tipo Personaje</label>
+                        <div class="tamanio">
                             <input type="radio" name="tipo_personaje" id="heroe-heroina" value="heroe"><label for="tipo_personaje">Héroe / Heroína</label>
                         </div>
-                        <div>
+                        <div class="tamanio">
                             <input type="radio" name="tipo_personaje" id="villano-villana" value="villano"><label for="tipo_personaje">Villano / Villana</label>
 
                         </div>
